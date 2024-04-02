@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-VA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactanos</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/index.html" target="_blank">Inicio</a></li>
+                <li><a href="/pages/terapias.html" target="_blank">Terapias</a></li>
+                <li><a href="/pages/nuestrosCursos.html" target="_blank">Nuestros cursos</a></li>
+                <li><a href="/pages/recursos.html" target="_blank">Recursos gratuitos</a></li>
+                <li>Contactanos</li>
+            </ul>
+        </nav>
+        <img src="/multimedia/img/logo_blanco_sin_fondo.png" alt="Logo Zona Zen" title="Zona Zen">
+    </header>
+    <main>
+        <h1>Contactanos:</h1>
+        <section>
+            <form name="input" action="contacto.html" method="post">
+                <label for="EleccionDeDisciplina">¿En qué disciplina estás interesado/a?:</label>
+                <input list="TipoDeDisciplina" id="EleccionDeDisciplina" name="EleccionDeDisciplina">
+                <datalist id="TipoDeDisciplina">
+                    <option value="Reiki"></option>
+                    <option value="Yoga"></option>
+                    <option value="Tai Chi"></option>
+                    <option value="Meditacion"></option>
+                    <option value="Mindfulness"></option>
+                    <option value="Cursos"></option>
+                </datalist>
+                <br>
+
+                <p class="formulario">¿Tenés conocimiento previo sobre esta disciplina?</p>
+                <input id="siTengo" type="radio" name="noSiTengo">
+                <label for="siTengo">Si, ya eh practicado antes.</label>
+                <br>
+                <input id="noTengo" type="radio" name="noSiTengo">
+                <label for="noTengo">No, aún no tuve contacto con esta disciplina.</label>
+                <br>
+
+                <p class="formulario">En caso de respuesta positiva, contanos con cuál/es:</p>
+                <input id="disciplina1" type="checkbox" name="disciplinas">
+                <label for="disciplina1">Reiki</label><br>
+                <input id="disciplina2" type="checkbox" name="disciplinas">
+                <label for="disciplina2">Yoga</label><br>
+                <input id="disciplina3" type="checkbox" name="disciplinas">
+                <label for="disciplina3">Tai Chi</label><br>
+                <input id="disciplina4" type="checkbox" name="disciplinas">
+                <label for="disciplina4">Mindfulness</label><br>
+                <input id="disciplina4" type="checkbox" name="disciplinas">
+                <label for="disciplina4">Meditación</label><br>
+
+                <p class="formulario">Completa tus datos:</p>
+                <label for="nombre" type="text" id="nombre">Nombre/s:</label>
+                <input type="text" name="nombre" id="nombre">
+                <br>
+
+                <label for="apellido" type="text" id="apellido">Apellido/s:</label>
+                <input type="text" name="apellido" id="apellido">
+                <br>
+
+                <label for="edad" type="text" id="edad">Edad:</label>
+                <input type="text" name="nombre" id="nombre">
+                <br>
+
+                <label for="e-mail" type="text" id="e-mail">E-mail:</label>
+                <input type="text" name="nombre" id="nombre">
+                <br>
+
+                <label for="telefono" type="text" id="telefono">Teléfono de contacto:</label>
+                <input type="text" name="telefono" id="telefono">
+                <br>
+
+                <p class="formulario">¿Te gusto nuestra pagina?</p>
+                <input id="meGusta" type="radio" name="meGustaONo">
+                <label for="meGusta">Si, me gusto!</label>
+                <br>
+                <input id="noMeGusta" type="radio" name="meGustaONo">
+                <label for="noMeGusta">No soy fan!</label>
+                <br>
+                
+                <p class="formulario">¿Te gustaría recibir nuestro boletín mensual con información sobre terapias holísticas?</p>
+                <input id="suscribirme" type="radio" name="siNoSuscribirme" select="1">
+                <label for="suscribirme">Si, me interesa!</label>
+                <br>
+                <input id="noSuscribirme" type="radio" name="siNoSuscribirme" select="1">
+                <label for="noSuscribirme">No, gracias!</label>
+                <br>
+
+                <p class="formulario">Dejanos tu comentario:</p>
+                <textarea name="comentarios" id="comentarios" cols="45" rows="10"></textarea>
+                <br>
+                <input type="submit" value="Enviar">
+            </form>
+            </section>
+    </main>
+    <footer>
+        
+    </footer>
+</body>
+</html>
